@@ -20,8 +20,8 @@ app.use(bodyParser.urlencoded({ extended: true })); // Parses `application/x-www
 const pool = createPool({
   host: 'localhost',
   user: 'root',
-  password: 'Wzh301712.',
-  database: 'icbv',
+  password: 'Cy1042951404.',
+  database: 'icbvdata',
 });
 
 
@@ -85,7 +85,7 @@ app.post('/contact', async (req, res) => {
     console.log(name);
     console.log(email);
     console.log(phone);
-    console.log(message);
+    console.log(message); // test
     // Validate required fields
     if (!name || !email || !message) {
       return res.status(400).json({ error: 'Name, email, and message are required.' });
